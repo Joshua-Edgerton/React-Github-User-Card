@@ -33,13 +33,23 @@ class UserCard extends React.Component{
         .then(userFollowers => {
             console.log(userFollowers)
             this.setState({ userfollowers: userFollowers});
-            console.log(this.state.userfollowers)
+            console.log(this.state.userfollowers);
+            var follow = userFollowers[0].url;
+            return fetch(follow);
+        })
+        .then(response => {
+            console.log(response)
         })
 
         .catch(error => {
             console.log('Error with fetch followers' + error)
         })
     }
+
+
+
+
+
 
     componentDidMount(){
         this.fetchUserData();
