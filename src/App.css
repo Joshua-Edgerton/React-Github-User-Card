@@ -1,0 +1,47 @@
+html {
+  height: 100%;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.App {
+  text-align: center;
+  margin: 4%;
+  width: 100%;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.user-card{
+  width: 25%;
+  background: rgba(255, 1255, 255, 0.5);
+  border-style: ridge;
+  padding-bottom: 2%;
+  min-width: 500px;
+}
+.followers{
+  width: 25%;
+  height: 100%;
+  padding-bottom: 2%;
+  background: rgba(255, 1255, 255, 0.5);
+  border-style: ridge;
+  display: flex;
+  padding-top: 2%;
+  min-width: 500px;
+  flex-direction: column;
+}
+
+.follower span{
+  padding-left: 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: bold;
+}
